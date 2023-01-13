@@ -22,7 +22,7 @@ export default function CreateForm() {
     const year: number = parseInt(data.yearInput);
     const value: number = parseInt(data.valueInput);
     if (userInput.find((item: dataType) => item.year === year) === undefined) {
-      updateUserInput((prev) => [...prev, { year: year, value: value }]);
+      updateUserInput((prev) => [...prev, { xValue: year, yValue: value }]);
       const options = {
         method: "POST",
         body: JSON.stringify({

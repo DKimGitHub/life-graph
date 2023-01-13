@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useContext } from 'react';
 import { CreatePageContext } from "../lib/CreatePageContext"
 import {
@@ -52,7 +54,7 @@ const options = {
 export default function Graph() {
   const { userInput, updateUserInput } = useContext(CreatePageContext)
 
-  userInput.sort((a: FormState, b: FormState) => a.year - b.year);
+  userInput.sort((a: FormState, b: FormState) => a.xValue - b.yValue);
 
   const data = {
     datasets: [

@@ -6,7 +6,8 @@ export type PageProps = {
   export type dataType = {
     [key: string]: any;
   }
+  
   export type FormState = {
-    year: number;
-    value: number;
+    xValue: number;
+    yValue: number;
   }
